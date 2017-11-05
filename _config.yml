@@ -21,7 +21,7 @@ theme: # leave it empty
 author: "Nelzkie"
 image: /thumbnail-jumbo.png
 twitter:
-  username: 
+  username: CodeandWave
 #  site:
 facebook:
   #publisher: 1592372034171500
@@ -29,3 +29,7 @@ facebook:
   #app_id: 1798910940422432 # cayman-blog
   #authors: lorepirri
 #  admins:
+
+google_plus:
+ url: https://plus.google.com/106969025067298354254
+ username: Code And Wave
