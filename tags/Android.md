@@ -2,7 +2,7 @@
 layout: tag_layout
 title: Android
 tagtitle: Android Development
-tagline: All about Android?
+tagline: All about Android stuff
 ---
 
 
