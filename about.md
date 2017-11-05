@@ -1,13 +1,11 @@
 ---
 layout: page
 title: About
-tagline: A few more words about this theme
+tagline: What is Code And Wave's Purpose?
 permalink: /about.html
 ---
 
-This is the _Cayman Blog_ Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: [cayman-blog](https://github.com/lorepirri/cayman-blog)
-
-You can find the source code for _Jekyll_ at [jekyll](https://github.com/jekyll/jekyll)
+The purpose of this blog is to act as my journal on my programming journey from beginner to let's say not beginner. In here I will talk about stuff I have learned and the projects I did and is currently working on.
 
 
 [Go to the Home Page]({{ site.url }}{{ site.baseurl }})
