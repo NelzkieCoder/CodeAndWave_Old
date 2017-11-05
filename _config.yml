@@ -2,7 +2,7 @@ title: Code and Wave
 description: Just Code and Wave coders. Just Code and Wave.
 show_downloads: false
 
-baseurl: "/CodeandWave" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+baseurl: "/CodeAndWave" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "" # change this to the base hostname & protocol for your site
 permalink: /:categories/:title
 email: "nelzkie.coder@gmail.com"
