@@ -8,4 +8,4 @@ If you want to get in touch. You could email me at <a href="mailto:{{ site.email
 <br />
 <br />
 <br />
-[Go to the Home Page]({{ site.url }})
+[Go to the Home Page]({{ site.baseurl }})
