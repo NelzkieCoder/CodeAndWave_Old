@@ -8,7 +8,7 @@ tagline: All about Android stuff
 <h1>Posts</h1>
 
 <link rel="icon"  type="image/png"    href="{{site.baseurl}}/assets/image/sample.jpeg">
-{% for post in site.tags.Android %}
+{% for post in site.tags.Android limit:10 %}
 
   <ul class="post-list">
         <!-- <li>
@@ -18,22 +18,20 @@ tagline: All about Android stuff
                 <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
             </h2>
         </li> -->
-
-
- 
-  </ul>
-
-  {% for post in site.tags.Android limit:10 %}
    <div class="post-preview">
    <h3><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3>
    <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
    {{ post.content | split:'<!--break-->' | first }}
    {% if post.content contains '<!--break-->' %}
-      <a href="{{site.baseurl}}{{ post.url }}" style="font-size:10pt;">read more</a>
+      <a href="{{site.baseurl}}{{ post.url }}" style="font-size:10pt;">Read more...</a>
    {% endif %}
    </div>
    <hr>
-{% endfor %}
+
+ 
+  </ul>
+
+
 
 <!-- <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ site.baseurl }}{{post.url}}">{{ post.title }}</a></li> -->
 
