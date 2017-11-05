@@ -2,10 +2,10 @@
 id: 152
 title: 'Java - Variables and Data Types'
 date: 2017-10-28T08:13:28+00:00
-author: nelzkie
+author: {{site.author}}
 layout: post
 
-tags: [Android]
+tags: [Java]
 
 categories:
   - Fundamentals
@@ -207,12 +207,12 @@ The {% highlight java %}System.out.println(){% endhighlight %}
 
 is a function that displays the data inside of the parenthesis in the console window of Intellij Idea.
 
-Notice the **new** keyword and the **+** sign there? Yeah the **new **keyword is use when declaring an object which will get into the next topic and the **+** sign is what we call an &#8220;**operator**&#8221; which we&#8217;ll cover when we get into classes and objects. For now try the code on your own and be amazed!
+Notice the **new** keyword and the **+** sign there? Yeah the **new **keyword is use when declaring an object which well cover when we get to classes and objects and the **+** sign is what we call an &#8220;**operator**&#8221; which we&#8217;ll cover on the next topic. For now try the code on your own and be amazed!
 
 Congratulations, you have now created a simple program. You can download the full source code **[here](https://github.com/NelzkieCoder/CodeWithEase/tree/master)**
 
 You are now officially a programmer. A beginner programmer that is. But hey, remember that every **PRO** was once a **BEGINNER.**
 
-On the next topic we&#8217;ll cover operators,arrays, and variable manipulation.
+On the next topic we&#8217;ll speed up and cover operators,arrays, methods and variable manipulation.
 
 &nbsp;
