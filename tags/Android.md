@@ -7,7 +7,7 @@ tagline: All about Android stuff
 
 <h1>Posts</h1>
 
-<link rel="icon"  type="image/png"    href="{{site.baseurl}}/assets/image/paris.jpeg">
+<link rel="icon"  type="image/png"    href="{{site.baseurl}}/assets/image/sample.jpeg">
 {% for post in site.tags.Android %}
 
   <ul class="post-list">
