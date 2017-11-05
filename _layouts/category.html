@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+
+
+<html>
+
+<h1>android here</h1>
+<h3>Categories</h3>
+
+<link rel="icon"  type="image/png"    href="{{site.baseurl}}/assets/image/paris.jpeg">
+{% for post in site.categories.Android %}
+<li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ site.baseurl }}{{post.url}}">{{ post.title }}</a></li>
+{% endfor %}
+</html>

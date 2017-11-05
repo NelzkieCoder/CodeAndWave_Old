@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div>
+
+  {{ content }}
+
+  <h2>Latest Posts</h2>
+
+  <div>&nbsp;</div>
+
+  <ul class="post-list">
+    <!-- {% for post in site.posts %}
+      <li>
+
+        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+        </h2>
+
+        <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
+
+      </li>
+    {% endfor %} -->
+
+    {% for post in site.posts limit:10 %}
+    <div class="post-preview">
+    <h2><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
+    <span class="post-date" style="font-size:12pt;">{{ post.date | date: "%B %d, %Y" }}</span>
+    {{ post.content | split:'<!--break-->' | first }}
+    {% if post.content contains '<!--break-->' %}
+       <a href="{{site.baseurl}}{{ post.url }}" style="font-size:10pt;">read more</a>
+    {% endif %}
+    </div>
+    <hr>
+ {% endfor %}
+  </ul>
+
+</div>
