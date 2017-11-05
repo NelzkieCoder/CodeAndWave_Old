@@ -1,7 +1,7 @@
 ---
 layout: tag_layout
 tagtitle: Java Fundamentals
-permalink: /Java/
+
 ---
 
 

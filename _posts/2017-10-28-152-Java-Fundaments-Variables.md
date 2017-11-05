@@ -4,8 +4,8 @@ title: 'Java - Variables and Data Types'
 date: 2017-10-28T08:13:28+00:00
 author: nelzkie
 layout: post
-guid: http://nelzkiea.sgedu.site/nelzkie_coder/?p=152
-tags: [Java]
+
+tags: [Android]
 
 categories:
   - Fundamentals
