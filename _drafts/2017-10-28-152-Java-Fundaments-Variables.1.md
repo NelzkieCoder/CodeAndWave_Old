@@ -1,11 +1,11 @@
 ---
 id: 152
 title: 'Java - Variables and Data Types'
-date: 2017-10-28T08:13:28+00:00
+date: 2016-10-28T08:13:28+00:00
 author: {{site.author}}
 layout: post
 
-tags: [Android]
+tags: [Java]
 
 categories:
   - Fundamentals

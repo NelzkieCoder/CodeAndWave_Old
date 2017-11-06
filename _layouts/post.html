@@ -37,6 +37,19 @@ layout: default
       </ul>
     </div>
 
+    
+    <hr style="background-color:rgba(21, 126, 114, 0.295); color:rgba(21, 126, 114, 0.315);width: 100%;" />
+    <div class="Previous-next">
+        {% if page.previous.url %}
+          <a class="previous" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+        {% endif %}
+        {% if page.next.url %}
+          <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+        {% endif %}
+      </div>
+
+
+
     {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
 
 

@@ -26,17 +26,60 @@ layout: default
       </li>
     {% endfor %} -->
 
-    {% for post in site.posts limit:10 %}
+
+    
+
+
+    {% for post in paginator.posts   %}
     <div class="post-preview">
     <h2><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
     <span class="post-date" style="font-size:12pt;">{{ post.date | date: "%B %d, %Y" }}</span>
     {{ post.content | split:'<!--break-->' | first }}
     {% if post.content contains '<!--break-->' %}
-       <a href="{{site.baseurl}}{{ post.url }}" style="font-size:10pt;">read more</a>
+       <a href="{{site.baseurl}}{{ post.url }}" style="font-size:10pt;">Read more...</a>  <br>  <br>
+
+    
+       <ul class="tags">
+        {% for tag in post.tags %}
+          <li><a href="{{site.baseurl}}/tags/{{ tag }}" class="tag">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
     {% endif %}
     </div>
-    <hr>
+    <hr style="background-color:rgba(21, 126, 114, 0.295); color:rgba(21, 126, 114, 0.315);width: 100%;">
  {% endfor %}
   </ul>
+
+
+  <br />  <br />  <br />
+<!-- pagination -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination"> 
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="webjeda">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+
+
+
 
 </div>
