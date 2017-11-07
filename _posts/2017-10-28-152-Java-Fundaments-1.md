@@ -3,9 +3,9 @@ id: 152
 title: 'Java - Variables and Data Types'
 date: 2017-10-28T08:13:28+00:00
 author: {{site.author}}
-layout: post
+layout: custom_post
 
-tags: [Java]
+tags: [Java,Fundamentals]
 
 categories:
   - Fundamentals
@@ -213,6 +213,6 @@ Congratulations, you have now created a simple program. You can download the ful
 
 You are now officially a programmer. A beginner programmer that is. But hey, remember that every **PRO** was once a **BEGINNER.**
 
-On the next topic we&#8217;ll speed up and cover operators,arrays, methods and variable manipulation.
+On the next topic we&#8217;ll  cover arrays.
 
 &nbsp;
